@@ -1,0 +1,25 @@
+name: Update tap formulae
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+jobs:
+  bump-formulae:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure Git user
+        uses: Homebrew/actions/git-user-config@master
+
+      - name: Bump Notetaker formula
+        uses: Homebrew/actions/bump-formulae@master
+        with:
+          formulae: notetaker
+        env:
+          HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
