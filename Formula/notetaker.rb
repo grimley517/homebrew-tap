@@ -5,8 +5,8 @@ class Notetaker < Formula
 
   desc "AI-powered terminal meeting note taker for MacBook (transcription + summary via Ollama)"
   homepage "https://github.com/grimley517/Notetaker"
-  url "https://github.com/grimley517/homebrew-tap/releases/download/v0.2.3/notetaker-0.2.3.tar.gz"
-  sha256 "e8dac039661d70bb8282bdb0052ac51e3db66e4d93ca38f628f3a025ad21abb6"
+  url "https://github.com/grimley517/homebrew-tap/releases/download/v0.2.4/notetaker-0.2.4.tar.gz"
+  sha256 "7794e43437f436eb7818eab430d687fc45c18695b8c7bcbd2901ffdd567a211d"
   head "https://github.com/grimley517/Notetaker.git", branch: "main"
 
   # Runtime dependencies provided by Homebrew
@@ -29,8 +29,8 @@ class Notetaker < Formula
   end
 
   resource "numpy" do
-    url "https://files.pythonhosted.org/packages/source/n/numpy/numpy-1.26.4.tar.gz"
-    sha256 "2a02aba9ed12e4ac4eb3ea9421c420301a0c6460d9830d74a9df87efa4912010"
+    url "https://files.pythonhosted.org/packages/22/fd/89965aa4ac08c74998539fcbf24fa3540f3e15237fbeb6bcf9c908f4aade/numpy-2.5.1.tar.gz"
+    sha256 "a48a113e6afea91f5608793bafa7ef2ad481fefbda87ec5069f483de61cb9fa3"
   end
 
   resource "faster-whisper" do
